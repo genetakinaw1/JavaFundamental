@@ -6,10 +6,26 @@ package com.fundementals.java;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-   System.out.println("Welcome to Java");
-   House myHouse = new House();
-   myHouse.doorOpenClose();
 
+        lesson5Examples();
+        //houseExample();
+
+    }
+
+    public static void lesson5Examples(){
+
+     Lesson5 mylesson5= new Lesson5();
+        mylesson5.showLocalExample();
+        mylesson5.showLocalWithParameter(10,12);
+        int example= mylesson5.showLocalWithReturn(15,8);
+        System.out.println(example);
+        mylesson5.showInstanceVariable();
+        mylesson5.showConversions();
+    }
+
+    public static void houseExample() {
+        System.out.println("Welcome to Java");
+        House myHouse = new House();
+        myHouse.doorOpenClose();
     }
 }
