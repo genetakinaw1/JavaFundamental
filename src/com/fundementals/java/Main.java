@@ -6,11 +6,41 @@ package com.fundementals.java;
 public class Main {
 
     public static void main(String[] args) {
-
-        lesson5Examples();
+        moreLesson6();
+        //lesson6Example();
+        //lesson5Examples();
         //houseExample();
 
     }
+
+
+    public static void moreLesson6() {
+
+        Lesson6 myOtherLesson6 = new Lesson6();
+        myOtherLesson6.exampleBuilder(" Spaghetti" , 2);
+        myOtherLesson6.exampleChat();
+        myOtherLesson6.exampleEscape();
+
+    }
+    public void Lesson6Example(){
+        Lesson6 myLesson6 =new Lesson6();
+
+    }
+
+public static void lesson6Example(){
+        Lesson6 myLesson6 = new Lesson6();
+        myLesson6.exampleChartAt();
+        myLesson6.examplConcat( " has awesome donuts");
+        myLesson6.egxampleEquals("LaMars");
+        String myLower = myLesson6.exampleLowerCase();
+        System.out.println(myLower);
+        String myUpper = myLesson6.exaampleUppercase();
+        System.out.println(myUpper);
+        myLesson6.exampleLength();
+
+
+}
+
 
     public static void lesson5Examples(){
 
