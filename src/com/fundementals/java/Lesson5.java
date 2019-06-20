@@ -37,11 +37,11 @@ public class Lesson5 {
     double myOtherDouble = 3643d;
 
 
-    // Decimal value of 25;
+    // Decimal value of 26;
     int value = 26;
 
 
-    // Hexadecimal value of 25;
+    // Hexadecimal value of 26;
     int value2 = 0x1a;
 
 
@@ -91,5 +91,7 @@ public class Lesson5 {
         System.out.println(i20);// double value was 84.98
 
     }
+
+
 
 }
