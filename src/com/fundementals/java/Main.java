@@ -6,10 +6,32 @@ package com.fundementals.java;
 public class Main {
 
     public static void main(String[] args) {
-    lesson7Examples();
+   Lab2.basicMath2();
+
+
+        //Demo myDemo = new Demo();
+   //myDemo.exampleEscape();
+   //myDemo.concatenation();
+        //Demo myDemo = new Demo();
+  // myDemo.addNumbers
+
+
+
+
+
+
+
+
+
+
+
+    //lesson7Examples();
 
        // moreDemo();
-//Demo1();
+
+
+
+
         //moreLesson6();
         //lesson6Example();
         //lesson5Examples();
@@ -122,4 +144,5 @@ public static void lesson6Example(){
         House myHouse = new House();
         myHouse.doorOpenClose();
     }
+
 }
