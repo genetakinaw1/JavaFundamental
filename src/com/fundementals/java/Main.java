@@ -6,16 +6,37 @@ package com.fundementals.java;
 public class Main {
 
     public static void main(String[] args) {
-   Lab2.basicMath2();
-
+        lesson8Examples2();
+        //lesson8Examples1();
+        //Lab2.basicMath2();
 
         //Demo myDemo = new Demo();
-   //myDemo.exampleEscape();
-   //myDemo.concatenation();
+        //myDemo.exampleEscape();
+        //myDemo.concatenation();
         //Demo myDemo = new Demo();
-  // myDemo.addNumbers
+        // myDemo.addNumbers
+    }
+
+    public static void lesson8Examples2(){
+       Lesson8 otherLesson = new Lesson8();
+       otherLesson.basicWhileExample();
+       otherLesson.basicDoWhileExample();
+       otherLesson.basicForLoopExample();
+       otherLesson.basicBranchingExample();
 
 
+    }
+        public static void lesson8Examples1(){
+            Lesson8 myLesson8 = new Lesson8();
+            myLesson8.basicIfExample(5,10);//prints before and after
+            myLesson8.basicIfExample(5,5);//print before,if and after
+            myLesson8.basicIfExample(10,12);//not equal
+            myLesson8.basicIfExample(12,12);//equal
+            myLesson8.basicIfElseChainExample(42);
+            myLesson8.basicIfAndOrExample(36);
+            myLesson8.basicSwitchExample(3);
+
+        }
 
 
 
@@ -37,7 +58,19 @@ public class Main {
         //lesson5Examples();
         //houseExample();
 
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public static void lesson7Examples (){
         lesson7 myLesson7 = new lesson7();
@@ -48,7 +81,7 @@ public class Main {
         //myLesson7.exampleAssignment2();
         //myLesson7.exampleRelational();
         //myLesson7.exampleIncreament();
-        myLesson7.exampleDecrement();
+       // myLesson7.exampleDecrement();
 
 
     }
