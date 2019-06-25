@@ -1,4 +1,6 @@
 package com.fundementals.java;
+import com.fundementals.lesson10.Lesson10;
+
 /*
 *This class is the starting class of this project
 * This is an example of a multiple comment.
@@ -6,7 +8,10 @@ package com.fundementals.java;
 public class Main {
 
     public static void main(String[] args) {
-        lesson8Examples2();
+lesson10Example();
+        //lesson9Example();
+      // beerSong();
+        //lesson8Examples2();
         //lesson8Examples1();
         //Lab2.basicMath2();
 
@@ -15,10 +20,37 @@ public class Main {
         //myDemo.concatenation();
         //Demo myDemo = new Demo();
         // myDemo.addNumbers
+    }//end of main method
+
+    public static void lesson10Example(){
+        //try to see a private method in another class
+        BottlesOfbeerSong song =new BottlesOfbeerSong();
+        // song.lesson10Private(); //can not acess
+        Lesson10 myLesson = new Lesson10();
+       // myLesson.showlesson
+       // myLesson.showProtected(); //can not access
+
     }
 
+
+    public static void lesson9Example(){
+        Lesson9 myLesson9 = new Lesson9();
+        myLesson9.basicIntArray();
+        myLesson9.basicStringArray();
+        myLesson9.basicTwoDimensionalArray();
+        myLesson9.basicThreeDimensionalArray();
+        myLesson9.basicJaggedArray();
+
+    }
+
+    public static void beerSong(){
+        BottlesOfbeerSong song = new BottlesOfbeerSong();
+        song.timeToSing();
+
+
+    }
     public static void lesson8Examples2(){
-       Lesson8 otherLesson = new Lesson8();
+        Lesson8 otherLesson = new Lesson8();
        otherLesson.basicWhileExample();
        otherLesson.basicDoWhileExample();
        otherLesson.basicForLoopExample();

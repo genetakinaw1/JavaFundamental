@@ -6,7 +6,7 @@ package com.fundementals.java;
 * */
 
 public class Lesson8 {
-
+// if statement
     public void basicIfExample(int value1, int value2) {
 
         System.out.println(" Before if statement");
@@ -17,14 +17,14 @@ public class Lesson8 {
         System.out.println("After if Statement");
 
     }
-
+//if and else statetment example
     public void basicIfElseExample(int alpha, int beta) {
         System.out.println("Before if statement");
         if (alpha != beta) {
-            System.out.println("The value are not equal");
+            System.out.println("The values are not equal");
 
         } else {
-            System.out.println("The valuses are equal");
+            System.out.println("The values are equal");
         }
         System.out.println("End of if statement");
     }
