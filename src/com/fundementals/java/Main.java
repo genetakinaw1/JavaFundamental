@@ -8,7 +8,9 @@ import com.fundementals.lesson10.Lesson10;
 public class Main {
 
     public static void main(String[] args) {
-lesson10Example();
+
+        //lesson11Example();
+//lesson10Example();
         //lesson9Example();
       // beerSong();
         //lesson8Examples2();
@@ -21,14 +23,27 @@ lesson10Example();
         //Demo myDemo = new Demo();
         // myDemo.addNumbers
     }//end of main method
+public static void Truck(){
+        Truck myTruck = new Truck();
+        myTruck.getBoxBed()
+
+}
+public static void lesson11Example() {
+        House house1 = new House ();
+
+        House house2 = new House ("Orange peel");
+    }
 
     public static void lesson10Example(){
         //try to see a private method in another class
+        //Lesson6 myLesson6 =new Lesson6();
+       // myLesson6.examplePrivate(); //can not access
+
         BottlesOfbeerSong song =new BottlesOfbeerSong();
         // song.lesson10Private(); //can not acess
         Lesson10 myLesson = new Lesson10();
        // myLesson.showlesson
-       // myLesson.showProtected(); //can not access
+       //myLesson.showProtected(); //can not access
 
     }
 
