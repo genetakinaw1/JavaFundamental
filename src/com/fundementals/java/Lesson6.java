@@ -8,6 +8,11 @@ package com.fundementals.java;
 public class Lesson6 {
     String myString = "LaMars";
     //Method shows string method for ChartAt
+    // adding private
+private void examplePrivate(){
+    System.out.println("This is a private method");
+
+}
 
     public void exampleChartAt(){
         char mychar = myString.charAt(2);
