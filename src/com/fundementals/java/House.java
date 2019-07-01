@@ -2,7 +2,7 @@ package com.fundementals.java;
 /*
 * This is our first class that we create ourselves
 * */
-public class House {
+public class House implements MyFirstInterface{
 
    private String roofType;
     private int windowSize;
@@ -18,9 +18,9 @@ public class House {
     }
 
     public House(String doorColor, int windowSize,String foundation,String roofType) {
-        this.doorColor = doorColor;
-        this.windowSize = windowSize;
-        this.fooundation = fooundation;
+        this.setDoorColor(doorColor);
+        this.setWindowSize(windowSize);
+        this.setFooundation(getFooundation());
         this.roofType = roofType;
 
     }
@@ -33,8 +33,40 @@ public class House {
         return roofType;
     }
 
-    //Our first method (function)
-    public void doorOpenClose(){
-        System.out.println("Open my door");
+    //Our first method (function)//method over loading
+    public void doorOpenClose(String message){
+        System.out.println(message);
     }
+
+
+    public String getDoorColor() {
+        return doorColor;
+    }
+
+    public void setDoorColor(String doorColor) {
+        this.doorColor = doorColor;
+    }
+
+    public int getWindowSize() {
+        return windowSize;
+    }
+
+    public void setWindowSize(int windowSize) {
+        this.windowSize = windowSize;
+    }
+
+    public String getFooundation() {
+        return fooundation;
+    }
+
+    public void setFooundation(String fooundation) {
+        this.fooundation = fooundation;
+    }
+    @Override
+    public void endCall(){
+
+    }
+
+
+
 }

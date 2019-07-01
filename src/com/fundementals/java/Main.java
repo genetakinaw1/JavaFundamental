@@ -1,4 +1,5 @@
 package com.fundementals.java;
+import com.fundementals.TruckExample;
 import com.fundementals.lesson10.Lesson10;
 
 /*
@@ -7,12 +8,32 @@ import com.fundementals.lesson10.Lesson10;
  */
 public class Main {
 
+    public static int num = 0;
+
+    static {
+        System.out.println("Static block 1");
+        num = 42;
+    }
+
+    static {
+        System.out.println("Static block 2");
+        num = 62;
+
+    }//end of static block.
+
     public static void main(String[] args) {
+     lesson15Example();
+//lesson14Example();
+        //lab3Assignment2();
+        //lab3Assignment();
+        // SUV();
+        // lesson12Example();
+        //TruckExample();
 
         //lesson11Example();
 //lesson10Example();
         //lesson9Example();
-      // beerSong();
+        // beerSong();
         //lesson8Examples2();
         //lesson8Examples1();
         //Lab2.basicMath2();
@@ -23,9 +44,67 @@ public class Main {
         //Demo myDemo = new Demo();
         // myDemo.addNumbers
     }//end of main method
-public static void Truck(){
-        Truck myTruck = new Truck();
-        myTruck.getBoxBed()
+
+    public static void lesson15Example() {
+        int[] mykeys = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        BlackBerry myBlackberry = new BlackBerry(25, mykeys, 0, "Color Screen");
+myBlackberry.recieveCall();
+        AbstractCellPhone myOldPhone = new BlackBerry(30, mykeys, 1, "Monochrome");
+        myOldPhone.recieveCall();
+        myOldPhone.endCall();
+
+
+
+
+
+}//end of method
+public static void lesson14Example() {
+    //Lesson14.MY_FIRST_FINAL = 10;//can not change value of a final.
+    int total = Lesson14.MY_FIRST_FINAL * 35;
+
+    System.out.println(total);
+
+// can change the value of a non-final static
+    Lesson14.myFirstStatic = 98; //original is 35
+    System.out.println(Lesson14.myFirstStatic);
+    Lesson14.myFirstStaticMethod(10);
+    System.out.println("Block number was " +num);
+    Lesson14.MyInnerClass test = new Lesson14.MyInnerClass();
+    test.myInnerMethod();
+
+}
+
+
+    public static void lab3Assignment2(){
+
+        Lab3 myabc= new Lab3();
+        myabc.lab3Assignment2();
+
+    }
+
+
+
+    public static void SUV(){
+        SUV mySUV =new SUV(8);
+        mySUV.getPassangerSeats();
+        System.out.println((mySUV.getPassangerSeats()));
+    }
+    public static void lesson12Example(){
+        Condo myCondo = new Condo();
+        myCondo.doorOpenClose();
+        Condo mySecondCondo = new Condo("railing","Orange",32,"composite","steel");
+        System.out.println(mySecondCondo.getDoorColor());
+    }
+
+public static void TruckExample(){
+        TruckExample myTruckExample = new TruckExample("Chrome","Tinted","Short","Hunter Green");
+         myTruckExample.setColor("candy cane");
+         myTruckExample.setBoxBed("long");
+        System.out.println((myTruckExample.getWheels()));
+        System.out.println(myTruckExample.getWindows());
+        System.out.println(myTruckExample.getBoxBed());
+        System.out.println(myTruckExample.getColor());
+
 
 }
 public static void lesson11Example() {
@@ -120,7 +199,7 @@ public static void lesson11Example() {
 
 
     public static void lesson7Examples (){
-        lesson7 myLesson7 = new lesson7();
+        //lesson7 myLesson7 = new lesson7();
         //myLesson7.basicMath();
         //myLesson7.exampleMadulus();
        // myLesson7.addTwoNumbers();
@@ -222,7 +301,7 @@ public static void lesson6Example(){
     public static void houseExample() {
         System.out.println("Welcome to Java");
         House myHouse = new House();
-        myHouse.doorOpenClose();
+
     }
 
 }
