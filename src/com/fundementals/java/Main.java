@@ -22,7 +22,10 @@ public class Main {
     }//end of static block.
 
     public static void main(String[] args) {
-     lesson15Example();
+        lesson17Example();
+
+        //lesson16Example();
+     //lesson15Example();
 //lesson14Example();
         //lab3Assignment2();
         //lab3Assignment();
@@ -44,6 +47,25 @@ public class Main {
         //Demo myDemo = new Demo();
         // myDemo.addNumbers
     }//end of main method
+
+
+    public static void lesson17Example(){
+        Lesson17 myLesson17 = new Lesson17();
+        //myLesson17.exampleArrayList();
+       // myLesson17.exampleArrayList2();
+       // myLesson17.exampleHashSet();
+        myLesson17.exampleHashMap();
+    }
+
+public static void lesson16Example(){
+        Lesson16 myLesson16 = new Lesson16();
+        myLesson16.ShowEnum();
+        myLesson16.myFavoriteFlavor(Lesson16.IceCreamFlavor.STRAWBERRY);
+        DaysOfTheWeek d1[] = DaysOfTheWeek.values();
+        for(DaysOfTheWeek day: d1) {
+            System.out.println(day + " at index " +day.ordinal());
+        }
+}
 
     public static void lesson15Example() {
         int[] mykeys = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
