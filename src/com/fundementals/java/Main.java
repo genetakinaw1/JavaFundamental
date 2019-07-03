@@ -22,7 +22,8 @@ public class Main {
     }//end of static block.
 
     public static void main(String[] args) {
-        lesson17Example();
+        lesson18Example();
+        //lesson17Example();
 
         //lesson16Example();
      //lesson15Example();
@@ -48,7 +49,12 @@ public class Main {
         // myDemo.addNumbers
     }//end of main method
 
+public static void lesson18Example(){
+        Lesson18 myLesson18 = new Lesson18();
+       // myLesson18.exampleException();
+        myLesson18.myArrayException();
 
+}
     public static void lesson17Example(){
         Lesson17 myLesson17 = new Lesson17();
         //myLesson17.exampleArrayList();
